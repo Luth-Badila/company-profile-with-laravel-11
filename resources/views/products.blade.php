@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,20 @@
     <main>
         <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
             <h1>My products Page</h1>
-            <h3>Owner: Lutfu</h3>
+            @foreach ($articles as $article)
+                <h2>{{ $article->title }}</h2>
+            @endforeach
         </div>
     </main>
 
 </body>
-</html>
+</html> --}}
+
+<x-layout>
+    <x-slot:title>{{ $title }}</x-slot:title>
+    <h3 class="text-xl">Welcome to Products Page</h3>
+    @foreach ($articles as $article)
+        <h2>{{ $article->title }}</h2>
+    @endforeach
+</x-layout>
+

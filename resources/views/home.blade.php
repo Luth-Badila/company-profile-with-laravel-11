@@ -26,4 +26,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+    <x-about></x-about>
+    <x-contact></x-contact>
 </x-layout>

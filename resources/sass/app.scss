@@ -1,5 +1,9 @@
 @import "bootstrap/scss/bootstrap";
 
+.bg-yellow {
+    background-color: rgb(255, 255, 0);
+}
+
 .offcanvas {
     background-color: #f8f9fa;
 }
@@ -11,4 +15,20 @@
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+section,
+.section {
+    color: black;
+    // background-color: blue;
+    padding: 30px 0;
+    scroll-margin-top: 88px;
+    overflow: clip;
+}
+
+@media (max-width: 1199px) {
+    section,
+    .section {
+        scroll-margin-top: 66px;
+    }
 }

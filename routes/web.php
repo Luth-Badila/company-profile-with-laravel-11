@@ -2,6 +2,7 @@
 
 use App\Models\Article;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ImageController;
 
 
 Route::get('/', function () {
@@ -19,3 +20,7 @@ Route::get('/contact', function () {
 Route::get('/products', function () {
     return view('products', ["title" => "Products", 'articles' => Article::all()]);
 });
+
+Route::get('/images', [ImageController::class, 'index']);
+Route::get('/images/create', [ImageController::class, 'create']);
+Route::post('/images', [ImageController::class, 'store']);

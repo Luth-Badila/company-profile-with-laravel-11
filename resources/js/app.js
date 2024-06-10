@@ -1,5 +1,7 @@
 import "./bootstrap";
 import "bootstrap";
+import Swiper from "swiper/bundle";
+import "swiper/css/bundle";
 
 /**
  * Template Name: Arsha
@@ -42,6 +44,30 @@ import "bootstrap";
             navbar.classList.remove("bg-light-yellow");
         }
     });
+
+    // Logo Swiper
+    const swiperContainer = document.querySelector(".logo-swiper");
+
+    if (swiperContainer) {
+        // Initialize Swiper
+        new Swiper(swiperContainer, {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    }
 
     /**
      * Mobile nav toggle

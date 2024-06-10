@@ -6,6 +6,12 @@
     {{-- @vite('resources/css/app.css') --}}
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <!-- Vendor CSS Files -->
+    {{-- <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> --}}
+    <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    {{-- <link href="/vendor/aos/aos.css" rel="stylesheet" /> --}}
+    {{-- <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" /> --}}
+    {{-- <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" /> --}}
     {{-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> --}}
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $title }}</title>

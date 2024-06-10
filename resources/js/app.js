@@ -146,12 +146,18 @@ import "swiper/css/bundle";
      * Scroll top button
      */
     let scrollTop = document.querySelector(".scroll-top");
+    let scrollMedia = document.querySelector(".media");
 
     function toggleScrollTop() {
         if (scrollTop) {
             window.scrollY > 100
                 ? scrollTop.classList.add("active")
                 : scrollTop.classList.remove("active");
+        }
+        if (scrollMedia) {
+            window.scrollY > 100
+                ? scrollMedia.classList.add("active")
+                : scrollMedia.classList.remove("active");
         }
     }
     scrollTop.addEventListener("click", (e) => {

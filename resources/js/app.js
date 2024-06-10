@@ -46,14 +46,14 @@ import "swiper/css/bundle";
     });
 
     // Logo Swiper
-    const swiperContainer = document.querySelector(".logo-swiper");
+    const swiperContainer = document.querySelector(".swiper");
 
     if (swiperContainer) {
         // Initialize Swiper
         new Swiper(swiperContainer, {
             loop: true,
-            slidesPerView: 3,
-            spaceBetween: 30,
+            // slidesPerView: 6,
+            spaceBetween: 10,
             autoplay: {
                 delay: 2000,
                 disableOnInteraction: false,
@@ -65,6 +65,28 @@ import "swiper/css/bundle";
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 60,
+                },
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 80,
+                },
+                992: {
+                    slidesPerView: 5,
+                    spaceBetween: 120,
+                },
+                1200: {
+                    slidesPerView: 6,
+                    spaceBetween: 40,
+                },
             },
         });
     }

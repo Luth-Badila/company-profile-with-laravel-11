@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-yellow">
+<nav class="navbar navbar-expand-lg navbar-light bg-yellow fixed-top" id="navbar">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ url('/') }}">LaravelApp</a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">

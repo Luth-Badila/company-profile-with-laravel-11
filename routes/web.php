@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Article;
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImageController;
 
@@ -18,7 +19,7 @@ Route::get('/contact', function () {
 });
 
 Route::get('/products', function () {
-    return view('products', ["title" => "Products", 'articles' => Article::all()]);
+    return view('products', ["title" => "Products", 'products' => Product::all()]);
 });
 
 Route::get('/images', [ImageController::class, 'index']);

@@ -10,13 +10,13 @@
                     <x-nav-link href="/" :active="request() -> is('/')">Home</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <x-nav-link href="/about">About</x-nav-link>
+                    <x-nav-link href="/about" :active="request() -> is('about')">About</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <x-nav-link href="/contact">Contact</x-nav-link>
+                    <x-nav-link href="/contact" :active="request() -> is('contact')">Contact</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <x-nav-link href="/products">Produk</x-nav-link>
+                    <x-nav-link href="/products" :active="request() -> is('products')">Produk</x-nav-link>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
@@ -64,16 +64,16 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <x-nav-link class="nav-link active" aria-current="page" href="/">Home</x-nav-link>
+                    <x-nav-link href="/" :active="request() -> is('/')">Home</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <x-nav-link href="/about">About</x-nav-link>
+                    <x-nav-link href="/about" :active="request() -> is('about')">About</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <x-nav-link href="/contact">Contact</x-nav-link>
+                    <x-nav-link href="/contact" :active="request() -> is('contact')">Contact</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <x-nav-link href="/products">Produk</x-nav-link>
+                    <x-nav-link href="/products" :active="request() -> is('products')">Produk</x-nav-link>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">

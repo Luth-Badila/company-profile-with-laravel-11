@@ -1,139 +1,22 @@
-{{-- <x-layout>
-    <x-slot:title>{{ $title }}</x-slot:title>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <x-about></x-about>
-    <x-contact></x-contact>
-</x-layout> --}}
-
 <x-layout>
     <x-slot:title>{{ $title }}</x-slot:title>
   <body class="index-page">
 
     <main class="main">
       <!-- Hero Section -->
-      <section id="hero" class="hero section">
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-              <h1>Better Solutions For Your Business</h1>
-              <p>We are team of talented designers making websites with Bootstrap</p>
-              <div class="d-flex">
-                <a href="#about" class="btn-get-started">Get Started</a>
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-              </div>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-              <img src="/images/hero-img.png" class="img-fluid animated" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
+        <x-hero></x-hero>
       <!-- /Hero Section -->
 
       <!-- Clients Section -->
-      <section class="clients section">
-          <div class="container">
-            <div class="swiper">
-                <div class="swiper-wrapper align-items-center">
-                    <div class="swiper-slide"><img src="/images/clients/client-1.png" class="img-fluid" alt="" /></div>
-                    <div class="swiper-slide"><img src="/images/clients/client-2.png" class="img-fluid" alt="" /></div>
-                    <div class="swiper-slide"><img src="/images/clients/client-3.png" class="img-fluid" alt="" /></div>
-                    <div class="swiper-slide"><img src="/images/clients/client-4.png" class="img-fluid" alt="" /></div>
-                    <div class="swiper-slide"><img src="/images/clients/client-5.png" class="img-fluid" alt="" /></div>
-                    <div class="swiper-slide"><img src="/images/clients/client-6.png" class="img-fluid" alt="" /></div>
-                    <div class="swiper-slide"><img src="/images/clients/client-7.png" class="img-fluid" alt="" /></div>
-                    <div class="swiper-slide"><img src="/images/clients/client-8.png" class="img-fluid" alt="" /></div>
-                  </div>
-            </div>
-        </div>
-      </section>
-      {{-- <section id="clients" class="clients section">
-        <div class="container" data-aos="zoom-in">
-          <div class="swiper">
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 40
-                  },
-                  "480": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 60
-                  },
-                  "640": {
-                    "slidesPerView": 4,
-                    "spaceBetween": 80
-                  },
-                  "992": {
-                    "slidesPerView": 5,
-                    "spaceBetween": 120
-                  },
-                  "1200": {
-                    "slidesPerView": 6,
-                    "spaceBetween": 120
-                  }
-                }
-              }
-            </script>
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide"><img src="/images/clients/client-1.png" class="img-fluid" alt="" /></div>
-              <div class="swiper-slide"><img src="/images/clients/client-2.png" class="img-fluid" alt="" /></div>
-              <div class="swiper-slide"><img src="/images/clients/client-3.png" class="img-fluid" alt="" /></div>
-              <div class="swiper-slide"><img src="/images/clients/client-4.png" class="img-fluid" alt="" /></div>
-              <div class="swiper-slide"><img src="/images/clients/client-5.png" class="img-fluid" alt="" /></div>
-              <div class="swiper-slide"><img src="/images/clients/client-6.png" class="img-fluid" alt="" /></div>
-              <div class="swiper-slide"><img src="/images/clients/client-7.png" class="img-fluid" alt="" /></div>
-              <div class="swiper-slide"><img src="/images/clients/client-8.png" class="img-fluid" alt="" /></div>
-            </div>
-          </div>
-        </div>
-      </section> --}}
+        <x-clients></x-clients>
       <!-- /Clients Section -->
 
       <!-- About Section -->
-     <x-about></x-about>
+        <x-about></x-about>
       <!-- /About Section -->
 
       <!-- Why Us Section -->
-      <section id="why-us" class="section why-us" data-builder="section">
+      {{-- <section id="why-us" class="section why-us" data-builder="section">
         <div class="container-fluid">
           <div class="row gy-4">
             <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
@@ -183,11 +66,11 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> --}}
       <!-- /Why Us Section -->
 
       <!-- Skills Section -->
-      <section id="skills" class="skills section">
+      {{-- <section id="skills" class="skills section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row">
             <div class="col-lg-6 d-flex align-items-center">
@@ -234,7 +117,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> --}}
       <!-- /Skills Section -->
 
       <!-- Services Section -->
@@ -289,7 +172,7 @@
       <!-- /Services Section -->
 
       <!-- Call To Action Section -->
-      <section id="call-to-action" class="call-to-action section">
+      {{-- <section id="call-to-action" class="call-to-action section">
         <img src="/images/cta-bg.jpg" alt="" />
 
         <div class="container">
@@ -303,11 +186,11 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> --}}
       <!-- /Call To Action Section -->
 
       <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio section">
+      {{-- <section id="portfolio" class="portfolio section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Portfolio</h2>
@@ -428,11 +311,11 @@
             <!-- End Portfolio Container -->
           </div>
         </div>
-      </section>
+      </section> --}}
       <!-- /Portfolio Section -->
 
       <!-- Team Section -->
-      <section id="team" class="team section">
+      {{-- <section id="team" class="team section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Team</h2>
@@ -515,11 +398,11 @@
             <!-- End Team Member -->
           </div>
         </div>
-      </section>
+      </section> --}}
       <!-- /Team Section -->
 
       <!-- Pricing Section -->
-      <section id="pricing" class="pricing section">
+      {{-- <section id="pricing" class="pricing section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Pricing</h2>
@@ -578,200 +461,8 @@
             <!-- End Pricing Item -->
           </div>
         </div>
-      </section>
+      </section> --}}
       <!-- /Pricing Section -->
-
-      <!-- Testimonials Section -->
-      <section id="testimonials" class="testimonials section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Testimonials</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper">
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                }
-              }
-            </script>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/images/testimonials/testimonials-1.jpg" class="testimonial-img" alt="" />
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/images/testimonials/testimonials-2.jpg" class="testimonial-img" alt="" />
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/images/testimonials/testimonials-3.jpg" class="testimonial-img" alt="" />
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/images/testimonials/testimonials-4.jpg" class="testimonial-img" alt="" />
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/images/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!-- /Testimonials Section -->
-
-      <!-- Faq 2 Section -->
-      <section id="faq-2" class="faq-2 section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Frequently Asked Questions</h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis
-            commodi quidem hic quas.
-          </p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-10">
-              <div class="faq-container">
-                <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
-                  <i class="faq-icon bi bi-question-circle"></i>
-                  <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                  <div class="faq-content">
-                    <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                  <i class="faq-icon bi bi-question-circle"></i>
-                  <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-                  <div class="faq-content">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper
-                      dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                  <i class="faq-icon bi bi-question-circle"></i>
-                  <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                  <div class="faq-content">
-                    <p>
-                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna
-                      duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-                  <i class="faq-icon bi bi-question-circle"></i>
-                  <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                  <div class="faq-content">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper
-                      dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
-                  <i class="faq-icon bi bi-question-circle"></i>
-                  <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
-                  <div class="faq-content">
-                    <p>
-                      Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis
-                      blandit turpis cursus in
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Faq 2 Section -->
 
       <!-- Contact Section -->
       <section id="contact" class="contact section">

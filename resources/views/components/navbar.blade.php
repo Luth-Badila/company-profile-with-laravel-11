@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-yellow fixed-top" id="navbar">
+<nav class="navbar navbar-expand-lg navbar-light bg-blue fixed-top" id="navbar">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ url('/') }}">LaravelApp</a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -10,13 +10,13 @@
                     <x-nav-link href="/" :active="request() -> is('/')">Home</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
+                    <x-nav-link href="/about">About</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
+                    <x-nav-link href="/contact">Contact</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/products">Produk</a>
+                    <x-nav-link href="/products">Produk</x-nav-link>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
@@ -64,16 +64,16 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <x-nav-link class="nav-link active" aria-current="page" href="/">Home</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
+                    <x-nav-link href="/about">About</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
+                    <x-nav-link href="/contact">Contact</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/products">Produk</a>
+                    <x-nav-link href="/products">Produk</x-nav-link>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">

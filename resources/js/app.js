@@ -39,9 +39,9 @@ import "swiper/css/bundle";
     let navbar = document.getElementById("navbar");
     window.addEventListener("scroll", function () {
         if (window.scrollY > 50) {
-            navbar.classList.add("bg-light-yellow");
+            navbar.classList.add("bg-light-blue");
         } else {
-            navbar.classList.remove("bg-light-yellow");
+            navbar.classList.remove("bg-light-blue");
         }
     });
 

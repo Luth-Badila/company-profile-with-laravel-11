@@ -11,7 +11,7 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-        return view('about', ["title" => "About"]);
+        return view('about-us', ["title" => "About"]);
 });
 
 Route::get('/contact', function () {
@@ -22,6 +22,6 @@ Route::get('/products', function () {
     return view('products', ["title" => "Products", 'products' => Product::all()]);
 });
 
-Route::get('/images', [ImageController::class, 'index']);
-Route::get('/images/create', [ImageController::class, 'create']);
-Route::post('/images', [ImageController::class, 'store']);
+// Route::get('/images', [ImageController::class, 'index']);
+// Route::get('/images/create', [ImageController::class, 'create']);
+// Route::post('/images', [ImageController::class, 'store']);

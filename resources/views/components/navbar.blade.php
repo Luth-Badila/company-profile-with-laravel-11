@@ -16,7 +16,7 @@
                     <x-nav-link href="/contact" :active="request() -> is('contact')">Contact</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <x-nav-link href="/products" :active="request() -> is('products')">Produk</x-nav-link>
+                    <x-nav-link href="/products" :active="request() -> is('products')">Products</x-nav-link>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
@@ -73,7 +73,7 @@
                     <x-nav-link href="/contact" :active="request() -> is('contact')">Contact</x-nav-link>
                 </li>
                 <li class="nav-item">
-                    <x-nav-link href="/products" :active="request() -> is('products')">Produk</x-nav-link>
+                    <x-nav-link href="/products" :active="request() -> is('products')">Products</x-nav-link>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
